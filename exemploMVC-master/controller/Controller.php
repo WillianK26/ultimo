@@ -22,6 +22,10 @@ class Controller {
         // e armazena o valor de retorno dessa funcao
         // na variavel reslt.
         switch ($acao) {
+            case 'will':
+                $this->showTelaWill();
+                break;
+
             case 'home':
                 $this->showConteudoInicialView();
                 break;
@@ -66,6 +70,10 @@ class Controller {
 
 	private function showTelaClaudio(){
 include 'view/c.php';
+}
+
+    private function showTelaWill(){
+include 'view/w.php';
 }
     
 }
