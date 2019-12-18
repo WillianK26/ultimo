@@ -37,6 +37,10 @@ class Controller {
             case 'perfil':
                 $this->showTelaDePerfilView();
                 break;
+		case 'claudio':
+		$this->showTelaClaudio();
+		break;
+
         }
     }
     
@@ -59,6 +63,10 @@ class Controller {
     private function showTelaDePerfilView(){
         include 'view/TelaPerfil.php';
     }
+
+	private function showTelaClaudio(){
+include 'view/c.php';
+}
     
 }
 
